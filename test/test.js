@@ -1,4 +1,4 @@
-var fs = require('fs');
+var fs = require('fs-extra');
 var test = require('tape');
 var stream = require('stream');
 var pkgcloud = require('pkgcloud');

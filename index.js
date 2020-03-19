@@ -2,7 +2,7 @@
  * File system based on storage provider
  */
 
-var fs = require('fs');
+var fs = require('fs-extra');
 var path = require('path');
 var async = require('async');
 var File = require('./file').File;
@@ -68,21 +68,13 @@ function validatePath(targetPath, cb) {
 
   if (lastIndex != -1) {
     var folderPath = targetPath.substring(0, lastIndex);
-    try {
-      var stat = fs.statSync(folderPath);
-      if (!stat.isDirectory()) {
-        mkdirp.sync(folderPath);
-      }
-    } catch(e) {
-      mkdirp.sync(folderPath);
-    }
-    var stat = fs.statSync(folderPath);
+    fs.ensureDirSync(folderPath)
   }
 
   return true;
 }
 
-/*!
+/*
  * Populate the metadata from file stat into props
  * @param {fs.Stats} stat The file stat instance
  * @param {Object} props The metadata object
