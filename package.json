@@ -1,10 +1,10 @@
 {
   "name": "@annoai/filesystem-storage-pkgcloud",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "filesystem storage provider for pkgcloud (based on loopback-storage-service)",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js | ./node_modules/.bin/tap-spec",
+    "test": "node tests/main.test.js | ./node_modules/.bin/tap-spec",
     "cover": "./node_modules/.bin/istanbul cover test/test.js | ./node_modules/.bin/tap-spec"
   },
   "repository": {
@@ -20,12 +20,19 @@
   "license": "MIT",
   "dependencies": {
     "async": "^3.2.0",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^7.0.1",
     "pkgcloud": "^2.2.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "tap-spec": "^5.0.0",
-    "tape": "^4.4.0"
+    "tape": "^4.4.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^7.0.0",
+    "memorystream": "^0.3.1",
+    "promised-lifestream": "^0.7.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
   }
 }

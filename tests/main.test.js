@@ -3,13 +3,13 @@ var test = require('tape');
 var stream = require('stream');
 var pkgcloud = require('pkgcloud');
 pkgcloud.providers.filesystem = {};
-pkgcloud.providers.filesystem.storage = require('../');
+pkgcloud.providers.filesystem.storage = require('..');
 
 var client = null;
 var content = 'testfile!';
 var containerName = 'test-container';
 var fileName = 'test-file';
-var basePath = 'test/storage';
+var basePath = 'tests/storage';
 
 var path = basePath + '/' + containerName + '/' + fileName;
 
@@ -225,6 +225,6 @@ test('Destroy container', function(t) {
 });
 
 test('Finish', function(t) {
-  fs.rmdirSync('test/storage');
+  fs.rmdirSync('tests/storage');
   t.end();
 });
