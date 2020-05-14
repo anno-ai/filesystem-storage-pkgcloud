@@ -318,8 +318,8 @@ function readdirAsync(dir, container, _this, callback) {
             process();
           });
         } else {
-          var fileName = path.basename(currentPath);
-          var props = {container: container, name: fileName, location: subPath };
+          let fpath = currentPath.split(container + path.sep).pop()
+          var props = {container: container, name: fpath, location: subPath };   
           populateMetadata(stat, props);
           var outFile = new File(_this, props);
           allFiles.push(outFile);

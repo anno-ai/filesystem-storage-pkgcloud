@@ -1,6 +1,6 @@
 {
   "name": "@annoai/filesystem-storage-pkgcloud",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "filesystem storage provider for pkgcloud (based on loopback-storage-service)",
   "main": "index.js",
   "scripts": {
