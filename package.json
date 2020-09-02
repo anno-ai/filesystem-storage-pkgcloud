@@ -1,38 +1,40 @@
 {
   "name": "@annoai/filesystem-storage-pkgcloud",
-  "version": "1.0.0",
-  "description": "filesystem storage provider for pkgcloud (based on loopback-storage-service)",
-  "main": "index.js",
-  "scripts": {
-    "test:unit": "node tests/main.test.js | ./node_modules/.bin/tap-spec",
-    "cover": "./node_modules/.bin/istanbul cover test/test.js | ./node_modules/.bin/tap-spec"
-  },
+  "description": "Filesystem storage provider for pkgcloud (based on loopback-storage-service)",
+  "license": "MIT",
+  "author": "Anno.Ai",
+  "homepage": "https://github.com/anno-ai/filesystem-storage-pkgcloud#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jemsoft/filesystem-storage-pkgcloud"
+    "url": "https://github.com/anno-ai/filesystem-storage-pkgcloud"
   },
-  "keywords": [
-    "pkgcloud",
-    "filesystem",
-    "cloud",
-    "provider"
-  ],
-  "license": "MIT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cover": "./node_modules/.bin/istanbul cover test/test.js | ./node_modules/.bin/tap-spec",
+    "test:unit": "node tests/main.test.js | ./node_modules/.bin/tap-spec"
+  },
   "dependencies": {
     "async": "^3.2.0",
     "fs-extra": "^7.0.1",
     "pkgcloud": "git://github.com/anno-ai/pkgcloud.git#master"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "tap-spec": "^5.0.0",
-    "tape": "^4.4.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "dotenv": "^7.0.0",
+    "eslint": "^6.8.0",
     "memorystream": "^0.3.1",
     "promised-lifestream": "^0.7.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.4.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
-  }
+  },
+  "keywords": [
+    "cloud",
+    "filesystem",
+    "pkgcloud",
+    "provider"
+  ]
 }
