@@ -4,7 +4,7 @@
   "description": "filesystem storage provider for pkgcloud (based on loopback-storage-service)",
   "main": "index.js",
   "scripts": {
-    "test": "node tests/main.test.js | ./node_modules/.bin/tap-spec",
+    "test:unit": "node tests/main.test.js | ./node_modules/.bin/tap-spec",
     "cover": "./node_modules/.bin/istanbul cover test/test.js | ./node_modules/.bin/tap-spec"
   },
   "repository": {
