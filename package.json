@@ -1,10 +1,10 @@
 {
   "name": "@annoai/filesystem-storage-pkgcloud",
-  "version": "1.2.2",
+  "version": "1.0.0",
   "description": "filesystem storage provider for pkgcloud (based on loopback-storage-service)",
   "main": "index.js",
   "scripts": {
-    "test": "node tests/main.test.js | ./node_modules/.bin/tap-spec",
+    "test:unit": "node tests/main.test.js | ./node_modules/.bin/tap-spec",
     "cover": "./node_modules/.bin/istanbul cover test/test.js | ./node_modules/.bin/tap-spec"
   },
   "repository": {
@@ -21,7 +21,7 @@
   "dependencies": {
     "async": "^3.2.0",
     "fs-extra": "^7.0.1",
-    "pkgcloud": "^2.2.0"
+    "pkgcloud": "git://github.com/anno-ai/pkgcloud.git#master"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
