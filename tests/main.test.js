@@ -1,7 +1,7 @@
 var fs = require('fs-extra');
 var test = require('tape');
 var stream = require('stream');
-var pkgcloud = require('pkgcloud');
+var pkgcloud = require('@annoai/pkgcloud');
 pkgcloud.providers.filesystem = {};
 pkgcloud.providers.filesystem.storage = require('..');
 
