@@ -12,7 +12,7 @@ const client = filesystem.createClient({ root: '_PATH_TO_LOCAL_STORAGE_DIRECTORY
 or add it to pkgcloud providers:
 
 ```javascript
-const pkgcloud = require('pkgcloud');
+const pkgcloud = require('@annoai/pkgcloud');
 pkgcloud.providers.filesystem = {};
 pkgcloud.providers.filesystem.storage = require('filesystem-storage-pkgcloud');
 const client = pkgcloud.storage.createClient({

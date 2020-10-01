@@ -12,7 +12,7 @@
   "main": "index.js",
   "scripts": {
     "cover": "./node_modules/.bin/istanbul cover test/test.js | ./node_modules/.bin/tap-spec",
-    "test:unit": "node tests/main.test.js | ./node_modules/.bin/tap-spec"
+    "test:unit": "node ./tests/main.test.js | ./node_modules/.bin/tap-spec"
   },
   "dependencies": {
     "@annoai/pkgcloud": "^1.7.0",
