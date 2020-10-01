@@ -1,7 +1,7 @@
 {
   "name": "@annoai/filesystem-storage-pkgcloud",
   "description": "Filesystem storage provider for pkgcloud (based on loopback-storage-service)",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "author": "Anno.Ai",
   "homepage": "https://github.com/anno-ai/filesystem-storage-pkgcloud#readme",
   "repository": {
@@ -12,12 +12,12 @@
   "main": "index.js",
   "scripts": {
     "cover": "./node_modules/.bin/istanbul cover test/test.js | ./node_modules/.bin/tap-spec",
-    "test:unit": "node tests/main.test.js | ./node_modules/.bin/tap-spec"
+    "test:unit": "node ./tests/main.test.js | ./node_modules/.bin/tap-spec"
   },
   "dependencies": {
+    "@annoai/pkgcloud": "^1.7.0",
     "async": "^3.2.0",
-    "fs-extra": "^7.0.1",
-    "pkgcloud": "git://github.com/anno-ai/pkgcloud.git#master"
+    "fs-extra": "^7.0.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",

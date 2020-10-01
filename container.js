@@ -1,4 +1,4 @@
-var base = require('pkgcloud').storage;
+var base = require('@annoai/pkgcloud').storage;
 var util = require('util');
 
 exports.Container = Container;
